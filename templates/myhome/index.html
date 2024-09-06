@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spam filter</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>welcome to whatsapp scam detection page</h1>
+    <p>Received a suspicious text on WhatsApp from someone claiming to be an online business? It might be a scam. Copy and paste it here, and we’ll check!
+    </p>
+    <label>input your copied whatsapp  text below👇</label><br>
+    <input id="input-text" placeholder="your text goes here...."><br>
+    <button id="check">check for spam</button>
+    <button id="clear">clear</button>
+ <p id="results">Results are displayed here...</p>
+    
+
+<script src="{% static 'main.js' %}"></script>    
+</body>
+</html>
